@@ -4,7 +4,8 @@ require 'addressable/uri'
 module Inky
   class File
     METADATA_FIELDS = :md5, :mimetype, :uploaded, :container, :writeable,
-                      :filename, :location, :key, :path, :size
+                      :filename, :location, :key, :path, :size, :width,
+                      :height
     MF_ARGS = METADATA_FIELDS.each_with_object({}) { |f, h| h[f] = true }
 
     attr_accessor(*METADATA_FIELDS)
