@@ -48,7 +48,7 @@ Inky::File.new(File.open('my_file.png')).save
 # this is equivalent to:
 file = Inky::File.new
 file.local_file = File.open('my_file.png')
-file.save
+file.save!
 ```
 
 To save from a URL:
@@ -59,7 +59,7 @@ Inky::File.new('http://example.com/my_file.png').save
 # this is equivalent to:
 file = Inky::File.new
 file.remote_url = 'http://example.com/my_file.png'
-file.save
+file.save!
 ```
 
 To update an existing file:
@@ -67,20 +67,20 @@ To update an existing file:
 ```ruby
 # Updating an existing file
 file = Inky::File.new('hFHUCB3iTxyMzseuWOgG')
-file.save mimetype: 'application/ogg' # updates the file's mimetype
-file.save local_file: File.open('my_new_file.png')
+file.save! local_file: File.open('my_new_file.ogg'),
+           mimetype: 'application/ogg',
 ```
 
 ### Configuration
 
 ```ruby
 # file#save accepts several options:
-file.save location: 'S3', # Other options include 'azure', 'rackspace', 'dropbox'
-          filename: 'my_cool_file.png',
-          mimetype: 'text/html',
-          path: '/my_cool_files/1234.png', # path to store on cloud storage
-          container: 'myapp-development', # container/bucket on cloud storage
-          access: 'public' # defaults to 'private'
+file.save! location: 'S3', # Other options include 'azure', 'rackspace', 'dropbox'
+           filename: 'my_cool_file.png',
+           mimetype: 'text/html',
+           path: '/my_cool_files/1234.png', # path to store on cloud storage
+           container: 'myapp-development', # container/bucket on cloud storage
+           access: 'public' # defaults to 'private'
 ```
 
 

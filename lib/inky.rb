@@ -1,9 +1,10 @@
 require_relative 'inky/file'
+require 'active_support/core_ext/module/attribute_accessors'
 
 module Inky
-  API_BASE_URL = 'https://www.filepicker.io/api/'
+  BASE_URL = 'https://www.filepicker.io/api'
 
-  attr_accessor :api_key
+  mattr_accessor :api_key
 
   def self.authorize!(api_key)
     self.api_key = api_key

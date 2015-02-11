@@ -23,12 +23,29 @@ module Inky
       end
     end
 
+    def url
+      "#{BASE_URL}/file/#{uid}"
+    end
+
+    def save!(opts = {})
+      opts = { location: 's3', key: Inky.api_key }.merge(opts)
+      location = opts.delete(:location)
+      post_url = Addressable::URI.parse("#{BASE_URL}/store/#{location}")
+      post_url.query_values = opts
+      puts post_url.to_s
+      post_opts = { url: remote_url, fileUpload: local_file }
+      post_opts = post_opts.delete_if { |_, v| v.nil? }
+      response = RestClient.post post_url.to_s, post_opts
+      self.uid = JSON.parse(response)['url'].split('/').last
+      request_metadata
+      self
+    end
+
   private
 
     def request_metadata
       return unless uid
-      response = RestClient.get "#{API_BASE_URL}/file/#{uid}/metadata",
-                                params: MF_ARGS
+      response = RestClient.get "#{url}/metadata", params: MF_ARGS
       self.metadata = JSON.parse(response)
       METADATA_FIELDS.each { |f| send("#{f}=", metadata[f.to_s]) }
     end
