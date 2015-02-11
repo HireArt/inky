@@ -10,7 +10,8 @@ module Inky
     attr_accessor(*METADATA_FIELDS)
     attr_accessor :uid, :local_file, :remote_url, :metadata
 
-    def initialize(value)
+    def initialize(value = nil)
+      return unless value
       if value.is_a?(File)
         self.local_file = value
       elsif valid_url?(value)
