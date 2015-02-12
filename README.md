@@ -1,4 +1,4 @@
-## Inky
+# Inky ![Inky](https://www.filepicker.io/api/file/iJnQeMi9RlGjpAQB10gu/convert?h=35)
 
 A ruby client for [filepicker.io](http://filepicker.io). Built on top of the Filepicker
 [REST API](https://developers.filepicker.io/docs/web/rest/).
