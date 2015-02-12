@@ -1,6 +1,9 @@
 require 'bundler/setup'
 Bundler.setup
 
+require 'dotenv'
+Dotenv.load
+
 require 'inky'
 require 'vcr'
 
