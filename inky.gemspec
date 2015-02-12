@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.email         = ['nathan@ngriffith.com']
   spec.summary       = "A ruby client for filepicker.io's REST API"
   spec.description   = "A ruby client for filepicker.io's REST API"
-  spec.homepage      = ''
-  spec.license       = ''
+  spec.homepage      = 'http://github.com/smudge/inky'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(/^bin/) { |f| File.basename(f) }
