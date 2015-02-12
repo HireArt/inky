@@ -13,14 +13,20 @@ module Inky
 
     def initialize(value = nil)
       return unless value
-      if value.is_a?(File)
-        self.local_file = value
-      elsif valid_url?(value)
-        self.remote_url = value
-      else
-        self.uid = value
-        request_metadata
-      end
+      self.uid = value
+      request_metadata
+    end
+
+    def self.from_file(file)
+      file = new
+      file.local_file = file
+      file
+    end
+
+    def self.from_url(url)
+      file = new
+      file.remote_url = url
+      file
     end
 
     def url
@@ -30,18 +36,23 @@ module Inky
     def save!(opts = {})
       opts = { location: 's3', key: Inky.api_key }.merge(opts)
       location = opts.delete(:location)
-      post_url = Addressable::URI.parse("#{BASE_URL}/store/#{location}")
+      post_url = Addressable::URI.parse(uid ? url : store_url)
       post_url.query_values = opts
       puts post_url.to_s
       post_opts = { url: remote_url, fileUpload: local_file }
       post_opts = post_opts.delete_if { |_, v| v.nil? }
       response = RestClient.post post_url.to_s, post_opts
       self.uid = JSON.parse(response)['url'].split('/').last
+      self.remote_url = self.local_file = nil
       request_metadata
       self
     end
 
   private
+
+    def store_url
+      "#{BASE_URL}/store/#{location}"
+    end
 
     def request_metadata
       return unless uid
