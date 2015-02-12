@@ -35,22 +35,30 @@ module Inky
 
     def save!(opts = {})
       opts = { location: 's3', key: Inky.api_key }.merge(opts)
-      location = opts.delete(:location)
-      post_url = Addressable::URI.parse(uid ? url : store_url)
-      post_url.query_values = opts
-      puts post_url.to_s
-      post_opts = { url: remote_url, fileUpload: local_file }
-      post_opts = post_opts.delete_if { |_, v| v.nil? }
-      response = RestClient.post post_url.to_s, post_opts
-      self.uid = JSON.parse(response)['url'].split('/').last
-      self.remote_url = self.local_file = nil
-      request_metadata
+      handle_post_response RestClient.post(post_url(opts), post_opts)
       self
     end
 
   private
 
-    def store_url
+    def post_url(opts)
+      location = opts.delete(:location)
+      post_url = Addressable::URI.parse(uid ? url : store_url(location))
+      post_url.query_values = opts
+      post_url.to_s
+    end
+
+    def post_opts
+      { url: remote_url, fileUpload: local_file }.delete_if { |_, v| v.nil? }
+    end
+
+    def handle_post_response(response)
+      self.uid = JSON.parse(response)['url'].split('/').last
+      request_metadata
+      self.remote_url = self.local_file = nil
+    end
+
+    def store_url(location)
       "#{BASE_URL}/store/#{location}"
     end
 
