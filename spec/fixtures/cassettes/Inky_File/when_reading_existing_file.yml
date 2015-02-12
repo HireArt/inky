@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.filepicker.io/api/file/hFHUCB3iTxyMzseuWOgG/metadata?container=true&filename=true&height=true&key=true&location=true&md5=true&mimetype=true&path=true&size=true&uploaded=true&width=true&writeable=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Feb 2015 18:43:26 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '242'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Max-Age:
+      - '21600'
+      Access-Control-Allow-Headers:
+      - CONTENT-TYPE
+      Set-Cookie:
+      - session=-; Domain=filepicker.io; expires=Thu, 01-Jan-1970 00:00:00 GMT; Path=/
+      - session=-; Domain=www.filepicker.io; expires=Thu, 01-Jan-1970 00:00:00 GMT;
+        Path=/
+      Content-Encoding:
+      - gzip
+      Vary:
+      - Accept-Encoding
+      P3p:
+      - CP="OTI DSP COR ADM DEV TAIo PSA PSD IVAi IVDi CONi HIS OUR IND CNT COM INT
+        NAV"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAE703FQC/5VPT0+DMBT/KgtnM9uVbuDVeJDLNBgNXkhLX+FlpWVQRDR+
+        d9vFeDTx3X7/8z6THnvw6wDJzSbBXrRwPdg2udok82CcUKCCQFlOGEvZgYTb
+        kiA2znqBFsYYW9081m6xtZybE/gYXkb0IKSJtVqYCQKn0YAV/WWJnyvnhuen
+        Cd9viwLP5Ut5t/0Z7gDbzgdXSuLUgsp3v8i4Rnh0NpaULNpPsEbwutrjW8r2
+        j0ccHypZ3I+sqv+aGcSl9v/BXvGY04wqqXOZZRwY5SrPgLK9DiRRQvNdtE74
+        Ed+lB76j5Osb00IkcW0BAAA=
+    http_version: 
+  recorded_at: Thu, 12 Feb 2015 18:43:26 GMT
+recorded_with: VCR 2.9.3

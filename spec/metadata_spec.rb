@@ -4,6 +4,8 @@ API_BASE_URL = 'https://www.filepicker.io/api'
 
 describe Inky::File do
   context 'when reading existing file' do
+    use_vcr_cassette
+
     let(:uid) { 'hFHUCB3iTxyMzseuWOgG' }
     let(:file) { Inky::File.new(uid) }
 
