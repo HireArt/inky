@@ -1,8 +1,6 @@
 require 'support/spec_helper'
 require 'active_support/core_ext/string/conversions'
 
-API_BASE_URL = 'https://www.filepicker.io/api'
-
 shared_examples 'uploaded inky.png' do
   let(:recorded_time) { VCR.current_cassette.originally_recorded_at || Time.now }
 

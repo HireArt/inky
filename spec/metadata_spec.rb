@@ -1,7 +1,5 @@
 require 'support/spec_helper'
 
-API_BASE_URL = 'https://www.filepicker.io/api'
-
 describe Inky::File do
   context 'when reading existing file' do
     use_vcr_cassette

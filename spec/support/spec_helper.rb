@@ -7,6 +7,8 @@ Dotenv.load
 require 'inky'
 require 'vcr'
 
+API_BASE_URL = 'https://www.filepicker.io/api'
+
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures/cassettes'
   config.hook_into :webmock
