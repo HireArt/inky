@@ -5,7 +5,7 @@ A ruby client for [filepicker.io](http://filepicker.io). Built on top of the Fil
 
 ### Installation
 
-Add this to your gemfile.rb:
+Add this to your Gemfile:
 
 ```
 gem 'inky'
@@ -13,14 +13,14 @@ gem 'inky'
 
 ### Basic Usage
 
-How to view information about existing files.
+To view information about an existing Filepicker file:
 
 ```ruby
 file = Inky::File.new('hFHUCB3iTxyMzseuWOgG')
 file.uid
 file.md5
 file.mimetype
-file.uploaded_at
+file.uploaded_at # converted to Time object
 file.container
 file.writeable
 file.filename
@@ -28,6 +28,7 @@ file.location
 file.key
 file.path
 file.size
+file.url
 
 file.metadata # hash of all available metadata
 ```
@@ -64,8 +65,9 @@ file.save!
 
 ### Configuration
 
+`file#save` accepts several options:
+
 ```ruby
-# file#save accepts several options:
 file.save! location: 'S3', # Other options include 'azure', 'rackspace', 'dropbox'
            filename: 'my_cool_file.ogg',
            mimetype: 'application/ogg',
@@ -79,7 +81,6 @@ file.save! location: 'S3', # Other options include 'azure', 'rackspace', 'dropbo
 `file.save!` can be used to update an existing file with new content from a local file or url:
 
 ```ruby
-# Updating an existing file
 file = Inky::File.new('hFHUCB3iTxyMzseuWOgG')
 file.local_file = File.open('my_new_file.ogg')
 file.save!
@@ -87,6 +88,21 @@ file.save!
 file = Inky::File.new('hFHUCB3iTxyMzseuWOgG')
 file.remote_url = 'http://example.com/my_new_file.ogg'
 file.save!
+```
+
+### Contributing
+
+* Check the issue tracker. If nothing exists, add a new issue to track your contributions.
+* Fork the project and create a new branch for your bugfix.
+* Write your contribution.
+* Add tests, ensuring good code coverage.
+* Submit a pull request.
+
+To add or update tests involving file uploads, you will need your own paid Filepicker account,
+and will need to add a `.env` file at the root of the project with the following line:
+
+```
+FILEPICKER_API_KEY: <YOUR_FILEPICKER_API_KEY>
 ```
 
 ### Todo
