@@ -20,7 +20,7 @@ file = Inky::File.new('hFHUCB3iTxyMzseuWOgG')
 file.uid
 file.md5
 file.mimetype
-file.uploaded
+file.uploaded_at
 file.container
 file.writeable
 file.filename

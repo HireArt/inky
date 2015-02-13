@@ -29,6 +29,10 @@ module Inky
       file
     end
 
+    def uploaded_at
+      Time.at(uploaded / 1000.0)
+    end
+
     def url
       "#{BASE_URL}/file/#{uid}"
     end
