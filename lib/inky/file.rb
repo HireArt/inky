@@ -35,6 +35,7 @@ module Inky
 
     def save!(opts = {})
       opts = { location: 's3', key: Inky.api_key }.merge(opts)
+      opts.merge filename: ::File.basename(local_file) if local_file
       handle_post_response RestClient.post(post_url(opts), post_opts)
       self
     end
