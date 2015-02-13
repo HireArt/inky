@@ -1,8 +1,11 @@
 require 'support/spec_helper'
+require 'active_support/core_ext/string/conversions'
 
 API_BASE_URL = 'https://www.filepicker.io/api'
 
 shared_examples 'uploaded inky.png' do
+  let(:recorded_time) { VCR.current_cassette.originally_recorded_at || Time.now }
+
   describe '#uid' do
     subject { file.uid }
     it { is_expected.to be_truthy }
@@ -15,9 +18,9 @@ shared_examples 'uploaded inky.png' do
     subject { file.mimetype }
     it { is_expected.to eq('image/png') }
   end
-  describe '#uploaded' do
-    subject { file.uploaded }
-    it { is_expected.to eq(1_423_769_156_390.755) }
+  describe '#uploaded_at' do
+    subject { file.uploaded_at.to_date }
+    it { is_expected.to eq(recorded_time.to_date) }
   end
   describe '#container' do
     subject { file.container }
