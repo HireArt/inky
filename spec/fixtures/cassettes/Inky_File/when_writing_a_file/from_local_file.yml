@@ -1,0 +1,176 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.filepicker.io/api/store/s3?key=<FP_API_KEY>
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        LS00NzMyNTENCkNvbnRlbnQtRGlzcG9zaXRpb246IGZvcm0tZGF0YTsgbmFt
+        ZT0iZmlsZVVwbG9hZCI7IGZpbGVuYW1lPSJpbmt5LnBuZyINCkNvbnRlbnQt
+        VHlwZTogaW1hZ2UvcG5nDQoNColQTkcNChoKAAAADUlIRFIAAAEsAAABLAgG
+        AAAAeX2OdQAACzlJREFUeF7t3FGOFUcMBdBMxC4ySMw+YPWwD5Ag6yAbIMhW
+        V7dtfPj2dLnOba7eV//1l38ECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIE
+        CBAgQIAAAQIECBAgQIAAAQIECBAgQKCTwMvr62unfewSFPjx/fPP4KixXwi8
+        vv/0AmaewN/zVrYxAQJbBRTW1uTdm8BAAYU1MDQrE9gqoLC2Ju/eBAYKKKyB
+        oVmZwFYBhbU1efcmMFBAYQ0MzcoEtgoorK3JuzeBgQIKa2BoViawVUBhbU3e
+        vQkMFFBYA0OzMoGtAgpra/LuTWCggMIaGJqVCWwVUFhbk3dvAgMFFNbA0KxM
+        YKuAwtqavHsTGCigsAaGZmUCWwUU1tbk3ZvAQAGFNTA0KxPYKuCb7v+TvG+m
+        b/0v0ePevjn/6xz8wurxftqCAIGAgMIKIBkhQKCHgMLqkYMtCBAICCisAJIR
+        AgR6CCisHjnYggCBgIDCCiAZIUCgh4DC6pGDLQgQCAgorACSEQIEeggorB45
+        2IIAgYCAwgogGSFAoIeAwuqRgy0IEAgIKKwAkhECBHoIKKweOdiCAIGAgMIK
+        IBkhQKCHgMLqkYMtCBAICCisAJIRAgR6CCisHjnYggCBgIDCCiAZIUCgh4DC
+        6pGDLQgQCAj8Md909w32QNpG1gr8Kd+I9wtr7Svs4gTmCSiseZnZmMBaAYW1
+        NnoXJzBPQGHNy8zGBNYKKKy10bs4gXkCCmteZjYmsFZAYa2N3sUJzBNQWPMy
+        szGBtQIKa230Lk5gnoDCmpeZjQmsFVBYa6N3cQLzBBTWvMxsTGCtgMJaG72L
+        E5gnoLDmZWZjAmsFFNba6F2cwDwBhTUvMxsTWCugsNZG7+IE5gkorHmZ2ZjA
+        WgGFtTZ6FycwT6Dsm+6nv8H+9Vtv/LcPvffrvp18eyVU9Y14v7B6vQe2IUDg
+        NwIKy+tBgMAYAYU1JiqLEiCgsLwDBAiMEVBYY6KyKAECCss7QIDAGAGFNSYq
+        ixIgoLC8AwQIjBFQWGOisigBAgrLO0CAwBgBhTUmKosSIKCwvAMECIwRUFhj
+        orIoAQIKyztAgMAYAYU1JiqLEiCgsLwDBAiMEVBYY6KyKAECCss7QIDAGAGF
+        NSYqixIg8K6KoPs3uk+7nL7v24fTG5593un7nt3u/NNO37d7vucFY0/0Cyvm
+        ZIoAgQYCCqtBCFYgQCAmoLBiTqYIEGggoLAahGAFAgRiAgor5mSKAIEGAgqr
+        QQhWIEAgJqCwYk6mCBBoIKCwGoRgBQIEYgIKK+ZkigCBBgIKq0EIViBAICag
+        sGJOpggQaCCgsBqEYAUCBGICCivmZIoAgQYCCqtBCFYgQCAmoLBiTqYIEGgg
+        oLAahGAFAgRiAgor5mSKAIEGAgqrQQhWIEAgJqCwYk6mCBBoIFD2TfePHxvc
+        /jcrfPnSe7/u28m3e0Iz9/MLa2ZutiawUkBhrYzdpQnMFFBYM3OzNYGVAgpr
+        ZewuTWCmgMKamZutCawUUFgrY3dpAjMFFNbM3GxNYKWAwloZu0sTmCmgsGbm
+        ZmsCKwUU1srYXZrATAGFNTM3WxNYKaCwVsbu0gRmCiismbnZmsBKAYW1MnaX
+        JjBTQGHNzM3WBFYKKKyVsbs0gZkCCmtmbrYmsFJAYa2M3aUJzBRQWDNzszWB
+        lQLhb7r/+P7550mhf15PPs2zCBB4UuB0H7y+//QS2d8vrIiSGQIEWggorBYx
+        WIIAgYiAwooomSFAoIWAwmoRgyUIEIgIKKyIkhkCBFoIKKwWMViCAIGIgMKK
+        KJkhQKCFgMJqEYMlCBCICCisiJIZAgRaCCisFjFYggCBiIDCiiiZIUCghYDC
+        ahGDJQgQiAgorIiSGQIEWggorBYxWIIAgYiAwooomSFAoIWAwmoRgyUIEIgI
+        KKyIkhkCBFoIKKwWMViCAIGIgMKKKJkhQKCFQPib7qe3/ffH2Sd+/Xb2eaef
+        9vbh9BN7P0++vfOZup1fWFOTszeBhQIKa2HorkxgqoDCmpqcvQksFFBYC0N3
+        ZQJTBRTW1OTsTWChgMJaGLorE5gqoLCmJmdvAgsFFNbC0F2ZwFQBhTU1OXsT
+        WCigsBaG7soEpgoorKnJ2ZvAQgGFtTB0VyYwVUBhTU3O3gQWCiishaG7MoGp
+        AgpranL2JrBQQGEtDN2VCUwVUFhTk7M3gYUCCmth6K5MYKqAwpqanL0JLBQo
+        +6b7aeu3D6ef6HmdBOTbKY26XfzCqrN3MgECSQGFlQQzToBAnYDCqrN3MgEC
+        SQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBA
+        nYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgEC
+        SQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBA
+        nYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgEC
+        SQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBA
+        nYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgEC
+        SQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBA
+        nYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgEC
+        SQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBA
+        nYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgEC
+        SQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBA
+        nYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgEC
+        SQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBA
+        nYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgEC
+        SQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBAnYDCqrN3MgECSQGFlQQzToBA
+        nYDCqrN3MgECSYF3yfm246/vP72cXO7H988/Tz6v+7NO+52+rzyuif4pfn5h
+        XXsP/DUBAg8KKKwHsR1FgMA1AYV1zc9fEyDwoIDCehDbUQQIXBNQWNf8/DUB
+        Ag8KKKwHsR1FgMA1AYV1zc9fEyDwoIDCehDbUQQIXBNQWNf8/DUBAg8KKKwH
+        sR1FgMA1AYV1zc9fEyDwoIDCehDbUQQIXBNQWNf8/DUBAg8KKKwHsR1FgMA1
+        AYV1zc9fEyDwoIDCehDbUQQIXBNQWNf8/DUBAg8KKKwHsR1FgMA1AYV1zc9f
+        EyDwoEDZN927f0P89H5/yje1H3w3Rx11+n05ffnT+1W9z35hnX4zPI8AgdsE
+        FNZttB5MgMBpAYV1WtTzCBC4TUBh3UbrwQQInBZQWKdFPY8AgdsEFNZttB5M
+        gMBpAYV1WtTzCBC4TUBh3UbrwQQInBZQWKdFPY8AgdsEFNZttB5MgMBpAYV1
+        WtTzCBC4TUBh3UbrwQQInBZQWKdFPY8AgdsEFNZttB5MgMBpAYV1WtTzCBC4
+        TUBh3UbrwQQInBZQWKdFPY8AgdsEFNZttB5MgMBpAYV1WtTzCBAgQIAAAQIE
+        CBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIE
+        lgj8BzV7R8tXRpyaAAAAAElFTkSuQmCCDQotLTQ3MzI1MS0tDQo=
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '3053'
+      Content-Type:
+      - multipart/form-data; boundary=473251
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 13 Feb 2015 17:07:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '125'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST
+      Access-Control-Max-Age:
+      - '21600'
+      Access-Control-Allow-Headers:
+      - CONTENT-TYPE
+      Set-Cookie:
+      - session=-; Domain=www.filepicker.io; expires=Thu, 01-Jan-1970 00:00:00 GMT;
+        Path=/
+      P3p:
+      - CP="OTI DSP COR ADM DEV TAIo PSA PSD IVAi IVDi CONi HIS OUR IND CNT COM INT
+        NAV"
+    body:
+      encoding: UTF-8
+      string: '{"url": "https://www.filepicker.io/api/file/g3QUl9gRNWtHnW8Aa9Md",
+        "size": 2930, "type": "image/png", "filename": "inky.png"}'
+    http_version: 
+  recorded_at: Fri, 13 Feb 2015 17:07:47 GMT
+- request:
+    method: get
+    uri: https://www.filepicker.io/api/file/g3QUl9gRNWtHnW8Aa9Md/metadata?container=true&filename=true&height=true&key=true&location=true&md5=true&mimetype=true&path=true&size=true&uploaded=true&width=true&writeable=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 13 Feb 2015 17:07:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '186'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Max-Age:
+      - '21600'
+      Access-Control-Allow-Headers:
+      - CONTENT-TYPE
+      Set-Cookie:
+      - session=-; Domain=filepicker.io; expires=Thu, 01-Jan-1970 00:00:00 GMT; Path=/
+      - session=-; Domain=www.filepicker.io; expires=Thu, 01-Jan-1970 00:00:00 GMT;
+        Path=/
+      Content-Encoding:
+      - gzip
+      Vary:
+      - Accept-Encoding
+      P3p:
+      - CP="OTI DSP COR ADM DEV TAIo PSA PSD IVAi IVDi CONi HIS OUR IND CNT COM INT
+        NAV"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAGIv3lQC/0WO2w6CMBBEf8X02SBtuRT/Zi1b2NALwRKDxn+3VSJvOzO7
+        Z/bFHDmM24zsemLkYMDL7Ad2PrF1tgF67FPAKyFV1YpGtrIu0pBiHXwE8rik
+        3K/WJuuxUES42cyKy4rJMmTRg/vR/bQVO3xEGsaYXFmW+ZL6OP6VDRoiBX+Q
+        J9wOMcN3d1eurzO8gVbXSgujBfAKtFE1CN50ShjemY7n0js98yOik+X7AwNs
+        Xfz5AAAA
+    http_version: 
+  recorded_at: Fri, 13 Feb 2015 17:07:48 GMT
+recorded_with: VCR 2.9.3

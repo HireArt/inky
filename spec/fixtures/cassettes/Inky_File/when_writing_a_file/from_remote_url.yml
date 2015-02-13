@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.filepicker.io/api/store/s3?key=<FP_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: url=https%3A%2F%2Fwww.filepicker.io%2Fapi%2Ffile%2FEt0USwFnSaGtRVlR6mXY%2Binky.png
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '82'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 13 Feb 2015 17:07:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '125'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST
+      Access-Control-Max-Age:
+      - '21600'
+      Access-Control-Allow-Headers:
+      - CONTENT-TYPE
+      Set-Cookie:
+      - session=-; Domain=www.filepicker.io; expires=Thu, 01-Jan-1970 00:00:00 GMT;
+        Path=/
+      P3p:
+      - CP="OTI DSP COR ADM DEV TAIo PSA PSD IVAi IVDi CONi HIS OUR IND CNT COM INT
+        NAV"
+    body:
+      encoding: UTF-8
+      string: '{"url": "https://www.filepicker.io/api/file/KNmGxyOdSHyzzFEcUGRS",
+        "size": 2930, "type": "image/png", "filename": "inky.png"}'
+    http_version: 
+  recorded_at: Fri, 13 Feb 2015 17:07:51 GMT
+- request:
+    method: get
+    uri: https://www.filepicker.io/api/file/KNmGxyOdSHyzzFEcUGRS/metadata?container=true&filename=true&height=true&key=true&location=true&md5=true&mimetype=true&path=true&size=true&uploaded=true&width=true&writeable=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 13 Feb 2015 17:07:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '186'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Max-Age:
+      - '21600'
+      Access-Control-Allow-Headers:
+      - CONTENT-TYPE
+      Set-Cookie:
+      - session=-; Domain=filepicker.io; expires=Thu, 01-Jan-1970 00:00:00 GMT; Path=/
+      - session=-; Domain=www.filepicker.io; expires=Thu, 01-Jan-1970 00:00:00 GMT;
+        Path=/
+      Content-Encoding:
+      - gzip
+      Vary:
+      - Accept-Encoding
+      P3p:
+      - CP="OTI DSP COR ADM DEV TAIo PSA PSD IVAi IVDi CONi HIS OUR IND CNT COM INT
+        NAV"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAGUv3lQC/0WO2Q6CMBBFf8X02SAtS4t/M5YpTOhCsMSg8d9tlcjjXebM
+        fTFHDuM2I7ueGDkY8DL7gZ1PbJ1tgB77FPBaVKqWopWS80LxVqRcBx+BPC6p
+        4Fdrk/VYKCLcbIbFZcVkGbLowf3wftqKnT4iDWNMblWW+ZL6OP6VDRoiBX+Q
+        J9wOMcO3uyvXNxnegtSN0sJoAbwGbVQDgredEoZ3puP56Z2eeYjoqvL9AcHW
+        cM76AAAA
+    http_version: 
+  recorded_at: Fri, 13 Feb 2015 17:07:51 GMT
+recorded_with: VCR 2.9.3
