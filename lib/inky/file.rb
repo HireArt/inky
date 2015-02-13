@@ -17,9 +17,9 @@ module Inky
       request_metadata
     end
 
-    def self.from_file(file)
+    def self.from_file(local_file)
       file = new
-      file.local_file = file
+      file.local_file = local_file
       file
     end
 

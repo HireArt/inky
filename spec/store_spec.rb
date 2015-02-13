@@ -60,7 +60,7 @@ describe Inky::File do
     context 'from local file' do
       use_vcr_cassette
 
-      let(:local_file) { File.new('spec/fixtures/files/inky.png') }
+      let(:local_file) { ::File.new('spec/fixtures/files/inky.png') }
       let(:file) { Inky::File.from_file(local_file) }
       before { file.save! }
 
