@@ -70,7 +70,7 @@ describe Inky::File do
     context 'from remote url' do
       use_vcr_cassette
 
-      let(:remote) { 'https://www.filepicker.io/api/file/TIYEWbFeRRiWU9mF7BPk' }
+      let(:remote) { 'https://www.filepicker.io/api/file/Et0USwFnSaGtRVlR6mXY+inky.png' }
       let(:file) { Inky::File.from_url(remote) }
       before { file.save! }
 
