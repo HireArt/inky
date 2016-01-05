@@ -6,8 +6,11 @@ Dotenv.load
 
 require 'inky'
 require 'vcr'
+require 'securerandom'
 
 API_BASE_URL = 'https://www.filepicker.io/api'
+
+ENV['FILEPICKER_API_KEY'] ||= SecureRandom.hex
 
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures/cassettes'
