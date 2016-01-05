@@ -1,4 +1,5 @@
-# Inky ![Inky](https://www.filepicker.io/api/file/iJnQeMi9RlGjpAQB10gu/convert?h=35)
+# Inky ![Inky](https://www.filepicker.io/api/file/iJnQeMi9RlGjpAQB10gu/convert?h=35) [![Build Status](https://img.shields.io/travis/smudge/inky.svg)](https://travis-ci.org/smudge/inky) [![Code Climate](https://img.shields.io/codeclimate/github/smudge/inky.svg)](https://codeclimate.com/github/smudge/inky) [![Test Coverage](https://img.shields.io/codeclimate/coverage/github/smudge/inky.svg)](https://codeclimate.com/github/smudge/inky/coverage)
+
 
 A ruby client for [filepicker.io](http://filepicker.io). Built on top of the Filepicker
 [REST API](https://developers.filepicker.io/docs/web/rest/).
