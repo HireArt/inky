@@ -5,11 +5,11 @@ require 'inky/version'
 Gem::Specification.new do |spec|
   spec.name          = 'inky'
   spec.version       = Inky::VERSION
-  spec.authors       = ['Smudge']
-  spec.email         = ['nathan@ngriffith.com']
+  spec.authors       = ['HireArt']
+  spec.email         = ['product@hireart.com']
   spec.summary       = "A ruby client for filepicker.io's REST API"
   spec.description   = "A ruby client for filepicker.io's REST API"
-  spec.homepage      = 'http://github.com/smudge/inky'
+  spec.homepage      = 'http://github.com/HireArt/inky'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
